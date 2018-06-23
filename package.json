@@ -109,6 +109,7 @@
     "url": "git+https://github.com/discordjs/discord.js.git"
   },
   "runkitExampleFilename": "./docs/examples/ping.js",
+  "main": "bot.js",
   "scripts": {
     "docs": "docgen --source src --custom docs/index.yml --output docs/docs.json",
     "docs:test": "docgen --source src --custom docs/index.yml",
@@ -116,7 +117,7 @@
     "lint:fix": "eslint --fix src",
     "test": "npm run lint && npm run docs:test",
     "webpack": "parallel-webpack",
-    "start": "node"
+    "start": "node bot.js"
   },
   "types": "./typings/index.d.ts",
   "version": "11.3.2"
