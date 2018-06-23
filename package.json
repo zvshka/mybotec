@@ -93,7 +93,7 @@
     "discordapp"
   ],
   "license": "Apache-2.0",
-  "main": "./src/index",
+  
   "name": "discord.js",
   "peerDependencies": {
     "bufferutil": "^3.0.3",
