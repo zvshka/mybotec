@@ -5,7 +5,7 @@ var prefix = '!';
 const roles = config.roles
 const CLEAR_MESSAGES = '!clear';
 
-client.login(process.env.token);
+client.login('NDQxMTQwOTYyNDY3NjQzMzk0.Dcr8OQ.Pku_q24YHqP8kFC4WgiZFlpmiSA');
 
 client.on("message", message => {
 function multicolors() {
