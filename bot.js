@@ -712,7 +712,7 @@ client.on("message", message => {
   }
      
  if(message.content.startsWith(prefix + "stoprain")) {
-     clearInterval(() => {rainbow(), rainbow60(), rainbow2(), rainbow3(), rainbow4(), rainbow5(), rainbow6(), rainbow7(), rainbow8(), rainbow9(), rainbow10(), rainbow11(), rainbow12(), rainbow13(), rainbow14(), rainbow15(), rainbow16(), rainbow18(), rainbow19(), rainbow20(), rainbow21(), rainbow22(), rainbow23(), rainbow24(), rainbow25(), rainbow26(), rainbow27(), rainbow28(), rainbow29(), rainbow30(), rainbow31(), rainbow32(), rainbow33(), rainbow34(), rainbow35(), rainbow36(), rainbow37(), rainbow38(), rainbow39(), rainbow40(), rainbow41(), rainbow42(), rainbow43(), rainbow44(), rainbow45(), rainbow46(), rainbow47(), rainbow48(), rainbow49(), rainbow50(), rainbow51(), rainbow52(), rainbow53(), rainbow54(), rainbow55(), rainbow56(), rainbow57(), rainbow58(), rainbow59()  })
+     clearInterval(() => {rainbow(), rainbow60(), rainbow2(), rainbow3(), rainbow4(), rainbow5(), rainbow6(), rainbow7(), rainbow8(), rainbow9(), rainbow10(), rainbow11(), rainbow12(), rainbow13(), rainbow14(), rainbow15(), rainbow16(), rainbow18(), rainbow19(), rainbow20(), rainbow21(), rainbow22(), rainbow23(), rainbow24(), rainbow25(), rainbow26(), rainbow27(), rainbow28(), rainbow29(), rainbow30(), rainbow31(), rainbow32(), rainbow33(), rainbow34(), rainbow35(), rainbow36(), rainbow37(), rainbow38(), rainbow39(), rainbow40(), rainbow41(), rainbow42(), rainbow43(), rainbow44(), rainbow45(), rainbow46(), rainbow47(), rainbow48(), rainbow49(), rainbow50(), rainbow51(), rainbow52(), rainbow53(), rainbow54(), rainbow55(), rainbow56(), rainbow57(), rainbow58(), rainbow59()  }, 0)
 };
 });
 
