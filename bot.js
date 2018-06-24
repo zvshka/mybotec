@@ -20,9 +20,20 @@ function multicolors() {
  }
 
  if(message.content.startsWith(prefix + "multicolor")) {
-   setInterval(() => { multicolors(); }, 200);
+   setInterval(() => { multicolors(); }, 800);
    }
+   if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_ROLES")) {
+    message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
+    console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
+    return;
+  } else if (!message.channel.permissionsFor(client.user).hasPermission("MANAGE_ROLES")) {
+    message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
+    console.log("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
+    return;
+  }
    
+
+
  if(message.content.startsWith(prefix + "stopmulti")) {
   clearInterval(() => { multicolors(); }, 0);
 }
