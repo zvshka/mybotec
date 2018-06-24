@@ -19,7 +19,7 @@ client.on("message", message => {
   });
  }
 
- if(message.content == !multicolor) {
+ if(message.content == prefix + 'multicolors') {
      if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_ROLES")) {
      message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
      console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
