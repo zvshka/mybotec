@@ -20,7 +20,6 @@ function multicolors() {
  }
 
  if(message.content == !multicolor) {
-   setInterval(() => { multicolors(); }, 800);
    }
      if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_ROLES")) {
      message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
