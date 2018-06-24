@@ -19,19 +19,19 @@ function multicolors() {
   });
  }
 
- if(message.content.startsWith(prefix + "multicolor")) {
+ if(message.content == !multicolor) {
    setInterval(() => { multicolors(); }, 800);
    }
-   if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_ROLES")) {
-    message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
-    console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
-    return;
-  } else if (!message.channel.permissionsFor(client.user).hasPermission("MANAGE_ROLES")) {
-    message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
-    console.log("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
-    return;
-  }
-   
+     if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_ROLES")) {
+     message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
+     console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
+     return;
+     } else if (!message.channel.permissionsFor(client.user).hasPermission("MANAGE_ROLES")) {
+     message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
+     console.log("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
+     return;
+   }
+   setInterval(() => { multicolors(); }, 800)
 
 
  if(message.content.startsWith(prefix + "stopmulti")) {
@@ -93,26 +93,7 @@ client.on('ready', () => {
   });
 });
 
-client.on("message", message => {
 
-  function multicolors() {
-    let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    roles.forEach((role) => {
-      let theRole = message.guild.roles.find("name", role);
-      theRole.edit({color: random}).catch(e => {
-        return message.channel.sendMessage(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
-      });
-    });
-  }
-
- if(message.content.startsWith(prefix + "multicolor")) {
-     setInterval(() => { multicolors(); }, 200);
-     }
-     
- if(message.content.startsWith(prefix + "stopmulti")) {
-  setTimeout(() => { console.log(process.exit(0)); }, 300);
-}
-});
 
 client.on("message", message => {
 
