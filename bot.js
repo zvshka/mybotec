@@ -9,7 +9,7 @@ const CLEAR_MESSAGES = '!clear';
 client.login('NDQxMTQwOTYyNDY3NjQzMzk0.Dcr8OQ.Pku_q24YHqP8kFC4WgiZFlpmiSA', process.env.PORT || 5000)
 
 client.on("message", message => {
-function multicolors() {
+ function multicolors() {
   let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
   roles.forEach((role) => {
     let theRole = message.guild.roles.find("name", role);
@@ -20,7 +20,6 @@ function multicolors() {
  }
 
  if(message.content == !multicolor) {
-   }
      if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_ROLES")) {
      message.channel.sendMessage("Ты не имеешь прав \""+message.content+"\"");
      console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
@@ -33,11 +32,11 @@ function multicolors() {
    setInterval(() => { multicolors(); }, 800)
 
 
- if(message.content.startsWith(prefix + "stopmulti")) {
-  clearInterval(() => { multicolors(); }, 0);
-}
-})
-
+   if(message.content.startsWith(prefix + "stopmulti")) {
+   clearInterval(() => { multicolors(); }, 0);
+   }
+  }
+});
 
 
 client.on("ready", () => {
