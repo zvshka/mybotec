@@ -2,7 +2,10 @@
   "name": "discord.js-heroku",
   "version": "1.0.0",
   "description": "An in-depth guide on deploying your Discord.js bot on Heroku",
-  "main": "bot.js",
+  "main":  "bot.js",
+  "files": [
+    "./config.json"
+  ],
   "engines": {
     "node": "6.0.0",
     "npm": "6.1.0"
@@ -28,4 +31,7 @@
   "dependencies": {
     "discord.js": "^11.3.0"
   }
+ 
+   
+ 
 }
