@@ -1,1 +1,1 @@
-worker: node bot.js
+worker: node bot.js $PORT 5000
