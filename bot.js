@@ -6,8 +6,8 @@ var prefix = '!';
 const roles = config.roles
 const CLEAR_MESSAGES = '!clear';
 
-client.login('NDQxMTQwOTYyNDY3NjQzMzk0.Dcr8OQ.Pku_q24YHqP8kFC4WgiZFlpmiSA').listen(process.env.PORT || 5000);
-
+client.login('NDQxMTQwOTYyNDY3NjQzMzk0.Dcr8OQ.Pku_q24YHqP8kFC4WgiZFlpmiSA')
+client.listen(process.env.PORT || 5000)
 client.on("message", message => {
 function multicolors() {
   let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
